@@ -1,0 +1,23 @@
+{
+ "apiVersion": "v1",
+ "kind": "Pod",
+ "metadata": {
+   "name": "helloworld",
+   "labels": {
+     "name": "aci-helloworld"
+   }
+ },
+ "spec": {
+   "containers": [
+     {
+       "name": "aci-helloworld",
+       "image": "<change this>.azurecr.io/aci-helloworld:latest",
+       "ports": [
+         {
+         "containerPort": 80
+         }
+       ]
+     }
+   ]
+  }
+}
